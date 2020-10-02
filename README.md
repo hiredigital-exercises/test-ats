@@ -1,5 +1,5 @@
 # Task
-The goal of the task is to showcase some campaigns in our platform. Each campaign consists of several projects that collectively make up that campaign. We need to create **two pages**, one containing a list of campaigns, and another of the detail of that campaign (and thus a list of projects in that campaign).
+The goal of the task is to showcase some campaigns in our platform. Each campaign consists of several projects that collectively make up that campaign. We need to create **two pages**, one containing a list of campaigns, and another of the details of that campaign (and thus a list of projects in that campaign).
 
 
 # Details and Limitations
@@ -8,26 +8,28 @@ The goal of the task is to showcase some campaigns in our platform. Each campaig
     - Inputs must be placed on the actual page (the user should not have to click an 'Edit button').
     - You must have a technique for handling many inputs on a single page.
 
-2. You must use QuillJS on `proposal` and `notes` fields.
+2. Use common sense for displaying content from the provided data files.
+
+3. You must use QuillJS on `proposal` and `notes` fields.
     - Each of the fields should expand in height based on the amount of content.
     - Use the default toolbar provided.
 
-3. You must use functional components and hooks and the latest version of React.
+4. You must use functional components and hooks and the latest version of React.
 
-4. These pages must also work on IE11.
+5. These pages must also work on IE11.
 
-5. You can use any technique you wish to save / preserve the data, but it should be in a way that can be done without the need of a backend server.
+6. You can use any technique you wish to save / preserve the data, but it should be in a way that can be done without the need of a backend server.
 
-6. You should deploy the code to Vercel to demo. 
+7. You should deploy the code to Vercel to demo. 
 
-7. Add both functional and unit tests for the pages and components you make
+8. Add both functional and unit tests for the pages and components you make
 
-8. For the components you create, you should also create Storybook examples.
+9. For the components you create, you should also create Storybook examples.
 
 
 # Data provided
 
-You can find the necessary dummy data in the `data folder`
+You can find the necessary dummy data in the `data folder`. Review the structure carefully.
 ```
 /data
     /campaign_list.json
