@@ -4,13 +4,13 @@ The goal of the task is to showcase some campaigns in our platform. Each campaig
 
 # Details and Limitations
 1. We need to be able to update project information for each campaign.
-  - Edits need to be save on debounce.
-  - Inputs must be placed on the actual page (the user should not have to click an 'Edit button').
-  - You must have a technique for handling many inputs on a single page.
+    - Edits need to be save on debounce.
+    - Inputs must be placed on the actual page (the user should not have to click an 'Edit button').
+    - You must have a technique for handling many inputs on a single page.
 
 2. You must use QuillJS on `proposal` and `notes` fields.
-  - Each of the fields should expand in height based on the amount of content.
-  - Use the default toolbar provided.
+    - Each of the fields should expand in height based on the amount of content.
+    - Use the default toolbar provided.
 
 3. You must use functional components and hooks and the latest version of React.
 
