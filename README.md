@@ -26,8 +26,8 @@ client, one of (customer)
 
 #### Applicant
 ```
-id,
-uuid,
+id
+uuid
 name, string
 picture, url
 email, email
@@ -41,7 +41,7 @@ job, one of (job)
 
 ## Evaluation
 
-The task will be evaluated on code structure and quality, test quality, and page performance. UX will be judged based on logical flow, ease of use, for the end user, which in this case, will be a person on the client side who is managing client projects. This test will not be evaluated on a UX for clients (who will create jobs), or talents (that will be applying for them).
+The task will be evaluated on code structure and quality, test quality, and page performance. UX will be judged based on logical flow, ease of use, for the end user, which in this case, will be a person on the "agency" side who is managing multiple clients. This test will not be evaluated on a UX for clients (who will create jobs), or talents (that will be applying for them).
 
 ## Details and Limitations
 
