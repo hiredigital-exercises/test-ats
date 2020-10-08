@@ -1,46 +1,53 @@
-# Task
-The goal of the task is to showcase some campaigns in our platform. Each campaign consists of several projects that collectively make up that campaign. We need to create **two pages**, one containing a list of campaigns, and another of the details of that campaign (and thus a list of projects in that campaign).
+## Task
 
+The goal of this task to create an applicant tracking system (ATS) in React. This applicant tracking system will consist of a list of jobs, as well as a detail page for each job with its applicants and their applications. The UX of the pages are up to you, so use your best judgement as to how to put the pages together.
 
-# Details and Limitations
-1. We need to be able to update project information for each campaign.
-    - Edits need to be save on debounce.
-    - Inputs must be placed on the actual page (the user should not have to click an 'Edit button').
-    - You must have a technique for handling many inputs on a single page.
+Structure of the models used will be as follows:
 
-2. Use common sense for displaying content from the provided data files.
-
-3. You must use QuillJS on `proposal` and `notes` fields.
-    - Each of the fields should expand in height based on the amount of content.
-    - Use the default toolbar provided.
-
-4. You must use functional components and hooks and the latest version of React.
-
-5. These pages must also work on IE11.
-
-6. You can use any technique you wish to save / preserve the data, but it should be in a way that can be done without the need of a backend server.
-
-7. You should deploy the code to Vercel to demo. 
-
-8. Add both functional and unit tests for the pages and components you make
-
-9. For the components you create, you should also create Storybook examples.
-
-
-# Data provided
-
-You can find the necessary dummy data in the `data folder`. Review the structure carefully.
+#### Customer
 ```
-/data
-    /campaign_list.json
-    /campaign_1.json
-    /campaign_2.json
-    /campaign_3.json
-    /campaign_4.json
-    /campaign_5.json
-    /campaign_6.json
-    /campaign_7.json
-    /campaign_8.json
+id
+uuid
+name, string
 ```
 
-We have provided a `campaign_list.json` which contains a list of campaigns as well as number of files entitled `campaign_[x].json` which contains the list of projects in a campaign.
+#### Job
+```
+id
+uuid
+title, string
+picture, url
+requirements, html text
+date, date
+salary, number
+location, string
+client, one of (customer)
+```
+
+#### Applicant
+```
+id,
+uuid,
+name, string
+picture, url
+email, email
+phone, string
+location, string
+application, html text
+status, one of (draft, submitted, accepted, rejected)
+notes, html text
+job, one of (job)
+```
+
+## Evaluation
+
+The task will be evaluated on code structure and quality, test quality, and page performance. UX will be judged based on logical flow, ease of use, for the end user, which in this case, will be a person on the client side who is managing client projects. This test will not be evaluated on a UX for clients (who will create jobs), or talents (that will be applying for them).
+
+## Details and Limitations
+
+1. You must use functional components and hooks and the latest version of React.
+2. These pages must also work on IE11.
+3. Data must be editable, and saved to LocalStorage.
+4. Prefill with dummy data of your choice, with at least 5 clients, 20 jobs, and 20 applicants each.
+5. Deploy code in a working demo to Vercel. 
+6. Add functional and unit tests for the pages and components you make. You can make use of any test library.
