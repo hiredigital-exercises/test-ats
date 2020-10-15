@@ -9,6 +9,5 @@ The task will be evaluated on code structure and quality, test quality, and page
 ## Details and Limitations
 
 1. You must use functional components and hooks and the latest version of React.
-1. Data must be editable, and saved to LocalStorage.
-1. Prefill with dummy data of your choice, with at least 5 clients, 20 jobs, and 20 applicants each.
+1. A user must have the ability and edit / add data on this test application.
 1. Deploy code in a working demo to Vercel. 
