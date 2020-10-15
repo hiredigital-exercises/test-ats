@@ -46,8 +46,7 @@ The task will be evaluated on code structure and quality, test quality, and page
 ## Details and Limitations
 
 1. You must use functional components and hooks and the latest version of React.
-2. These pages must also work on IE11.
-3. Data must be editable, and saved to LocalStorage.
-4. Prefill with dummy data of your choice, with at least 5 clients, 20 jobs, and 20 applicants each.
-5. Deploy code in a working demo to Vercel. 
-6. Add functional and unit tests for the pages and components you make. You can make use of any test library.
+1. Data must be editable, and saved to LocalStorage.
+1. Prefill with dummy data of your choice, with at least 5 clients, 20 jobs, and 20 applicants each.
+1. Deploy code in a working demo to Vercel. 
+1. Add functional and unit tests for the pages and components you make. You can make use of any test library.
